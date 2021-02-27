@@ -19,7 +19,7 @@ This is an implementation of the notion Persistent Laplacian first invented by R
 %	upL - q-th up persistent Laplacian
 ```
 ## boundary.py
-**boundary.py** is a python code based on dionysus (https://www.mrzv.org/software/dionysus2/) generating boundary matrices required by **persistLap.m**. It takes as input a point cloud and extracts two Vietoris-Rips complexes determined by two given thresholds as a simplicial pair K in L. The output consists of **q1Boundary.mat** a (q+1)-boundary matrix of L and **qBoundary.mat** a q-boundary matrix of K, where q is the dimension specified by the user. 
+**boundary.py** is a python code based on dionysus (https://www.mrzv.org/software/dionysus2/) generating boundary matrices required by **persistLap.m**. It takes as input a point cloud and extracts two Vietoris-Rips complexes determined by two given thresholds as a simplicial pair K in L. The output consists of **q1Boundary.mat**: a (q+1)-boundary matrix of L, and **qBoundary.mat**: a q-boundary matrix of K, where q is the dimension specified by the user. 
 
 ## example
 Inside the example folder, we include a point cloud file **Point.txt**, which represents a 35-point point cloud randomly generated from a circle illustrated in the figure below. We include two precomputed boundary matrices **q1Boundary.mat** and **qBoundary.mat** when q=2 for a simplicial pair K in L with thresholds 1 and 1.5. **VR-persistLap** takes **q1Boundary.mat** and **qBoundary.mat** as input and compute the 2-persistent Laplacian and the corresponding eigenvalues.
