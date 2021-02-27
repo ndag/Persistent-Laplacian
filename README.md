@@ -1,4 +1,6 @@
-This is an implementation of the notion Persistent Laplacian first invented by Rui Wang, Duc Duy Nguyen, Guo-Wei Wei in the paper https://arxiv.org/abs/1912.04135. The algorithm implemented in this repo was developed by [Facundo Memoli](https://people.math.osu.edu/memolitechera.1/), [Zhengchao Wan](https://math.osu.edu/people/wan.252-0) and [Yusu Wang](http://yusu.belkin-wang.org) in the paper https://arxiv.org/abs/2012.02808.
+This is an implementation of the notion Persistent Laplacian first invented by Rui Wang, Duc Duy Nguyen, Guo-Wei Wei in the paper https://arxiv.org/abs/1912.04135. 
+
+The algorithm implemented in this repo was developed by [Facundo Memoli](https://people.math.osu.edu/memolitechera.1/), [Zhengchao Wan](https://math.osu.edu/people/wan.252-0) and [Yusu Wang](http://yusu.belkin-wang.org) in the paper https://arxiv.org/abs/2012.02808. Our algorithm crucially exploits the notion of Schur complement (DISCUSS: add ref to Kron reduction in network theory and paper by Bullo et al).
 
 # persistent-Laplacian
 ## persistLap.m
