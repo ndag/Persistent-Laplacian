@@ -2,13 +2,15 @@ import dionysus as d
 import numpy as np
 import scipy.io
 
-tK = 1;
-tL = 1.5;
-end = 1.5;
-q = 2;
-# input point cloud data set; 
-filename = "Point.txt"
+# The followings are input data
+filename = "Point.txt" # input a point cloud dataset; 
 data = np.genfromtxt(filename, delimiter=' ')
+tK = 1; # threshold for simplicial complex K
+tL = 1.5; # threshold for simplicial complex L
+end = 1.5; # largest threshold for building the Vietoris-Rips complex
+q = 2; # dimension for the persistent Laplacian
+
+# Building a Vietoris-Rips complex
 f = d.fill_rips(data, q+1, end)
 print(f)
 
@@ -19,7 +21,8 @@ print(count)
 shape = (count,count)
 Bw = np.zeros(shape, dtype=int)
 
-if q == 0:
+
+if q == 0: # If q=0, returns only the 1-boundary matrix
     q1_column_index = []
     q1_row_index = []
     Kind = 0
@@ -45,7 +48,7 @@ if q == 0:
     print(Kind)
     mat = np.matrix(Bq1)
     scipy.io.savemat('q1Boundary.mat', mdict={'Bq1': mat}, do_compression=True)
-else:
+else:    # If q>0, returns both the q-boundary matrix and the (q+1)-boundary matrix    
     q_column_index = []
     q_row_index = []
     q1_column_index = []
