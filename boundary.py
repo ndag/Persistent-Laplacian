@@ -22,7 +22,7 @@ shape = (count,count)
 Bw = np.zeros(shape, dtype=int)
 
 
-if q == 0: # If q=0, returns only the 1-boundary matrix
+if q == 0: # If q=0, returns only the 1-boundary matrix of L
     q1_column_index = []
     q1_row_index = []
     Kind = 0
@@ -48,7 +48,7 @@ if q == 0: # If q=0, returns only the 1-boundary matrix
     print(Kind)
     mat = np.matrix(Bq1)
     scipy.io.savemat('q1Boundary.mat', mdict={'Bq1': mat}, do_compression=True)
-else:    # If q>0, returns both the q-boundary matrix and the (q+1)-boundary matrix    
+else:    # If q>0, returns both the q-boundary matrix of K and the (q+1)-boundary matrix of L   
     q_column_index = []
     q_row_index = []
     q1_column_index = []
