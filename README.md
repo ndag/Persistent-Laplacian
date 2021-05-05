@@ -1,3 +1,6 @@
+![Alt text](res.png?raw=true "A resistor network")
+
+
 This is an implementation of the notion Persistent Laplacian first invented by Rui Wang, Duc Duy Nguyen, Guo-Wei Wei in the paper https://arxiv.org/abs/1912.04135. 
 
 The algorithm implemented in this repo was developed by [Facundo Memoli](https://people.math.osu.edu/memolitechera.1/), [Zhengchao Wan](https://math.osu.edu/people/wan.252-0) and [Yusu Wang](http://yusu.belkin-wang.org) in the paper https://arxiv.org/abs/2012.02808. Our algorithm crucially exploits the notion of Kron reduction in network theory ([Dorfler and Bullo, 2013](https://ieeexplore.ieee.org/abstract/document/6316101?casa_token=4Cqb50382jwAAAAA:S9-3b_sQiDb-56C0yrhKSAW8RNJaC4dIAbK2rZUtFXNY2DoYOXQ9wlmVPJtksD1wCNcSkX4WKg)).
