@@ -1,5 +1,5 @@
 ![Alt text](res.png?raw=true "A resistor network" | 250x250)
-
+<img src="res.png" alt="A resistor network" width="300" height="300">
 
 This is an implementation of the notion Persistent Laplacian first invented by Rui Wang, Duc Duy Nguyen, Guo-Wei Wei in the paper https://arxiv.org/abs/1912.04135. 
 
