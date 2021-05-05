@@ -30,4 +30,8 @@ The algorithm implemented in this repo was developed by [Facundo Memoli](https:/
 ## example
 Inside the example folder, we include a point cloud file **Point.txt**, which represents a 35-point point cloud randomly generated from a circle illustrated in the figure below. We include two precomputed boundary matrices **q1Boundary.mat** and **qBoundary.mat** when q=2 for a Vietoris-Rips simplicial pair K in L with thresholds 1 and 1.5. **VR-persistLap** takes **q1Boundary.mat** and **qBoundary.mat** as input and compute the 2-persistent Laplacian and the corresponding eigenvalues.
 
-![output](https://github.com/ZhengchaoW/persistent-Laplacian/blob/main/points.jpg?raw=true)
+<p align="center">
+<img src="points.jpg" alt="A point cloud" width="400" height="300">
+  </p>
+
+
