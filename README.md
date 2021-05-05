@@ -1,4 +1,6 @@
-<img src="res.png" alt="A resistor network" width="400" height="300" align="center">
+<p align="center">
+<img src="res.png" alt="A resistor network" width="400" height="300">
+  </p>
 
 This is an implementation of the notion Persistent Laplacian first invented by Rui Wang, Duc Duy Nguyen, Guo-Wei Wei in the paper https://arxiv.org/abs/1912.04135. 
 
